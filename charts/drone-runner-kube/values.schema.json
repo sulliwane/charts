@@ -27,11 +27,7 @@
     "image": {
       "$id": "#/properties/image",
       "type": "object",
-      "required": [
-        "repository",
-        "tag",
-        "pullPolicy"
-      ],
+      "required": ["repository", "tag", "pullPolicy"],
       "properties": {
         "repository": {
           "$id": "#/properties/image/properties/repository",
@@ -84,10 +80,7 @@
     "service": {
       "$id": "#/properties/service",
       "type": "object",
-      "required": [
-        "type",
-        "port"
-      ],
+      "required": ["type", "port"],
       "properties": {
         "type": {
           "$id": "#/properties/service/properties/type",
@@ -103,12 +96,7 @@
     "ingress": {
       "$id": "#/properties/ingress",
       "type": "object",
-      "required": [
-        "enabled",
-        "annotations",
-        "hosts",
-        "tls"
-      ],
+      "required": ["enabled", "annotations", "hosts", "tls"],
       "properties": {
         "enabled": {
           "$id": "#/properties/ingress/properties/enabled",
@@ -163,10 +151,7 @@
     "env": {
       "$id": "#/properties/env",
       "type": "object",
-      "required": [
-        "DRONE_RPC_HOST",
-        "DRONE_RPC_SECRET"
-      ],
+      "required": ["DRONE_RPC_HOST"],
       "properties": {
         "DRONE_RPC_HOST": {
           "$id": "#/properties/env/properties/DRONE_RPC_HOST",
